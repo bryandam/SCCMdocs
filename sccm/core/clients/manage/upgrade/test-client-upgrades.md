@@ -24,7 +24,7 @@ manager: angrobe
 
 You can test a new Configuration Manager client version in a pre-production collection before upgrading the rest of the site with it.  When you do this, only devices that are part of the test collection are upgraded. Once you've had a chance to test the client you can promote the client, which makes the new version of the client software available to the rest of the site.
 
-> [!NOTE]
+> [!IMPORTANT]
 > To promote a test client to production, you must be logged in as a user with security role of **full administrator** and a security scope of **All**. For more information, see [Fundamentals of role-based administration](/sccm/core/understand/fundamentals-of-role-based-administration). You must also be logged into a server connected to the central administration site  or a top-level standalone primary site.
 
  There are 3 basic steps to testing clients in pre-production.  
@@ -36,8 +36,10 @@ You can test a new Configuration Manager client version in a pre-production coll
 3.  Promote the new client to production.  
 
 ##  To configure automatic client upgrades to use a pre-production collection  
+> [!NOTE]
+> Pre-production client deployment is not supported for workgroup computers. They can't use the authentication required for the distribution point to access the pre-production client package.  They will receive the latest client when it is promoted to be the production client.
 
-1. [Set up a collection](..\collections\create-collections.md) that contains the computers you want to deploy the pre-production client to. Don't  include workgroup computers in pre-production collections. They can't use the authentication required for the distribution point to access the pre-production client package.   
+1. [Set up a collection](..\collections\create-collections.md) that contains the computers you want to deploy the pre-production client to.   
 
 1.  In the Configuration Manager console open **Administration** > **Site Configuration** > **Sites**, and choose **Hierarchy Settings**.  
 
