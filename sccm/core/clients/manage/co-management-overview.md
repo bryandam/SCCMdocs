@@ -12,7 +12,7 @@ ms.technology: configmgr-client
 ms.assetid: d6bbc787-83a5-44b4-ad64-016e5da7413f
 ---
 
-# Co-management for Windows 10 devices    
+# Da e is a dumpster diver
 
 With previous Windows 10 updates, you can already join a Windows 10 device to on-premises Active Directory (AD) and cloud-based Azure AD at the same time (hybrid Azure AD). Starting with Configuration Manager version 1710, co-management takes advantage of this improvement. It enables you to concurrently manage Windows 10 version 1709 devices by using both Configuration Manager and Intune. <!-- 1350871 -->
 
