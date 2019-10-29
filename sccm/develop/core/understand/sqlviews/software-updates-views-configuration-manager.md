@@ -117,12 +117,12 @@ The view can be joined to other views by using the **AssignmentID** and **CI_ID*
 
 ### v_Update_ComplianceSummary
 
-Lists all software updates, by **CI_ID**, the last time summarization was run, the total count of client computers, the count of client computers reporting unknown, not applicable, missing (required), and present (already installed) states, and so on.
+Lists all software updates and software update groups, by **CI_ID**, the last time summarization was run, the total count of client computers, the count of client computers reporting unknown, not applicable, missing (required), and present (already installed) states, and so on.
 The view can be joined to other views by using the **CI_ID** column.
 
 ### v_Update_ComplianceSummary_Live
 
-Lists all software updates, by **CI_ID**, the last time summarization was run, the total count of client computers, the count of client computers reporting unknown, not applicable, missing (required), and present (already installed) states, and so on.
+Lists all software updates and software update groups, by **CI_ID**, the last time summarization was run, the total count of client computers, the count of client computers reporting unknown, not applicable, missing (required), and present (already installed) states, and so on.
 The view can be joined to other views by using the **CI_ID** column.
 
 ### v_Update_DeploymentSummary_Live
