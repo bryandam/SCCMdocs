@@ -25,7 +25,7 @@ The software updates views contain information about software updates. When crea
 
 ### v_AuthListInfo
 
-Lists the software update groups, by CI_ID, for the Configuration Manager hierarchy, including when the software update group was created, when it was last modified, who last modified the software update group, source site, title, description, and so on. This view contains a subset of information from the **v_ConfigurationItems** view, joins the **v_LocalizedCIProperties** view to retrieve software update group title and description information, and filters the information by **CIType**=9, which indicates an software update group configuration item.
+Lists the software update groups, by CI_ID, for the Configuration Manager hierarchy, including when the software update group was created, when it was last modified, who last modified the software update group, source site, title, description, and so on. This view contains a subset of information from the **v_ConfigurationItems** view, joins the **v_LocalizedCIProperties** view to retrieve software update group title and description information, and filters the information by **CIType** = 9, which indicates an software update group configuration item.
 The view can be joined to other views by using the **CI_ID**, **CI_UniqueID**, and **SDMPackage_ID** columns.
 
 ### v_EULAContent
@@ -45,7 +45,7 @@ The view can be joined to the **v_UpdateScanStatus** view by using the **UpdateS
 
 ### v_UpdateCIs
 
-Lists all of the software updates configuration items, by **CI_ID** and **CI_UniqueID**. The information in this view is a subset of information from the **v_ConfigurationItems** view, retrieving all records where the configuration type is **Software Updates** or **Software Updates Bundle** (**CIType**=1 or 8), including article ID, bulletin ID, severity, date created, whether the update is deployed, and so on.
+Lists all of the software updates configuration items, by **CI_ID** and **CI_UniqueID**. The information in this view is a subset of information from the **v_ConfigurationItems** view, retrieving all records where the configuration type is **Software Updates** (CIType = 1) or **Software Updates Bundle** (CIType = 8), including article ID, bulletin ID, severity, date created, whether the update is deployed, and so on.
 The view can be joined to other views by using the **CI_ID**, **CI_UniqueID**, and **SDMPackage_ID** columns.
 
 ### v_UpdateContents
