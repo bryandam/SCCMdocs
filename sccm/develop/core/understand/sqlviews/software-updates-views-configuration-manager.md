@@ -87,6 +87,16 @@ The view can be joined to other views by using the **AssignmentID**, **ResourceI
 Lists the detection state for all software updates that have been scanned for compliance on Configuration Manager clients, as well as the resource ID of the client, last enforcement state ID, enforcement source, last status check time, and so on.
 The view can be joined to other views by using the **CI_ID**, **ResourceID**, **Status**, and **LastEnforcementMessageID** columns. The Status column provides the state ID for state messages with a topic type of 500. The **LastEnforcementMessageID** column provides the state ID for state messages with a topic type of 402.
 
+### v_Update_ComplianceStatusAll
+
+Lists the detection state for all software updates that have been scanned for compliance on Configuration Manager clients, as well as the resource ID of the client, last enforcement state ID, enforcement source, last status check time, and so on. The **v_Update_ComplianceStatusAll** view combines information from the **v_Update_ComplianceStatusReported** and **v_UpdateComplianceStatus_Unknown** views. The view is also listed and described in the [Status Alert Views in Configuration Manager](status-alert-views-configuration-manager.md) topic.
+The view can be joined to other views by using the **CI_ID**, **ResourceID**, **Status**, and **LastEnforcementMessageID** columns. The Status column provides the state ID for state messages with a topic type of 500. The **LastEnforcementMessageID** column provides the state ID for state messages with a topic type of 402.
+
+### v_Update_ComplianceStatusReported
+
+Lists the detection state for all software updates that have been scanned for compliance on Configuration Manager clients, as well as the resource ID of the client, last enforcement state ID, enforcement source, last status check time, and so on. The **v_Update_ComplianceStatusReported** view combines information from the **v_UpdateComplianceStatus** and **v_UpdateComplianceStatus_NotApplicable** views. The view is also listed and described in the [Status Alert Views in Configuration Manager](status-alert-views-configuration-manager.md) topic.
+The view can be joined to other views by using the **CI_ID**, **ResourceID**, **Status**, and **LastEnforcementMessageID** columns. The **Status** column provides the state ID for state messages with a topic type of 500. The **LastEnforcementMessageID** column provides the state ID for state messages with a topic type of 402.
+
 ### v_UpdateScanStatus
 
 Lists the Configuration Manager client computers, by resource ID, that have scanned for software updates compliance and the last scan state, as well as the last scan time, last error code, last Windows Update Agent version, and so on.
