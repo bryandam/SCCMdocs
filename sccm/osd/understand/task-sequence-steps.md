@@ -1011,7 +1011,7 @@ These applications don't appear in the **Select the application to install** dia
 
 The task sequence installs applications using this base variable name. The base variable name is for a set of task sequence variables defined for a collection or computer. These variables specify the applications that the task sequence installs for that collection or computer. Each variable name consists of its common base name plus a numerical suffix starting at 01. The value for each variable must contain the name of the application and nothing else.  
 
-For the task sequence to install applications by using a dynamic variable list, enable the following setting on the **General** tab of the application **Properties**: **Allow this application to be installed from the Install Application task sequence action instead of deploying manually**.  
+For the task sequence to install applications by using a dynamic variable list, enable the following setting on the **General** tab of the application **Properties**: **Allow this application to be installed from the Install Application task sequence action without being deployed**.  
 
 > [!NOTE]  
 > You can't install applications by using a dynamic variable list for stand-alone media deployments.  
